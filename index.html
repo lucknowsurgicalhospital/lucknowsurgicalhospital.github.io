@@ -12,20 +12,19 @@
 <script>
 function whatsapp(){
     var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    var phone = document.getElementById("tel").value;
     var city = document.getElementById("city").value;
+    var email = document.getElementById("email").value;
+    var tel = document.getElementById("tel").value;
 
     var url = "https://wa.me/918795041549?text="
     +"*Name :* "+name+"%0a"
+    +"*City :* "+city+"%0a"
     +"*Email :* "+email+"%0a"
-    +"*Phone :* "+tel+"%0a"
-    +"*Date :* "+city;
+    +"*Tel :* "+tel;
 
     window.open(url,'_blank').focus();
     }
 
-}
 </script>
 
 <body>
