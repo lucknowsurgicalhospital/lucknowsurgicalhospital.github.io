@@ -6,6 +6,7 @@
 
 }
 
+
 body {
     /* background: url(/res/webbg.png);
     background-repeat: no-repeat;
@@ -67,7 +68,7 @@ span {
 .topbar {
     width: 100%;
     height: 58px;
-    background-color: rgba(255, 255, 255, 0.479);
+    background-color: rgb(255, 255, 255);
     margin: 0;
     position: fixed;
     display: flex;
@@ -80,7 +81,7 @@ span {
 }
 
 .logo {
-    font-size: 28px;
+    font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-transform: uppercase;
@@ -168,27 +169,31 @@ input[type=checkbox] {
     .menu {
         display: none;
         position: absolute;
-        background-color:#a4def7;
+        background-color:#e3f5fd;
         right: 0;
         left: 0;
-        text-align: left;
+        text-align: center;
         margin-top: 13px;
         border-top-right-radius: 8px;
-        width: 40%;
+        width: 100%;
         height: 100vh;
         padding: 16px 0;
-        z-index: -1;
+        z-index: 1;
     }
-
+    .menu li {
+        width: 90%;
+        background-color: #1c96ca;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+    }
     .menu li:hover {
         display: inline-block;
         background-color: rgb(216, 216, 216);
         transition: 0.3s ease;
     }
-
     .menu li+li {
         margin-top: 10px;
-
     }
 
     input[type=checkbox]:checked~.menu {
@@ -220,29 +225,55 @@ input[type=checkbox] {
         align-items: center;
         flex-direction: row;
     }
+    #page{
+        width: 100%;
+    }
+.logo img {
+    width: auto;
+    height: 55px;
+}
 #btnBook{
     display: none;
 }
 #home{
-    padding-top: 40px;
+    padding-top: 80px;
 }
 #home .content{
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
 #home .content-text{
-    width: 100%;
-}
-#home .content-media{
-    display: block;
+    width: 100%;6g
+    font-size: 26px;
 }
 #home .content-text h1{
-    font-size: 46px;
+    font-size: 34px;
+    margin-top: 5px;
+    
+}
+#home .btnBook{
+    padding-top: 20px;
+}
+#home .content-media{
+    display:block;
+    width: 90%;
+    margin: 0 auto 0 auto;
+    background-color: #1c96ca00;
+}
+#home .content-media img{
+    width: 100%;
+}
+#home .content-text h1{
+    font-size: 36px;
     font-family: Arial, Helvetica, sans-serif;
 }
+#home .content-text p{
+    font-size: 14px;
+
+}
 #team .card{
-    width: 80%;
+    width: 90%;
 }
 #team .panel{
     width: 100%;
@@ -250,8 +281,8 @@ input[type=checkbox] {
     justify-content: center;
 }
 #facility .service-block{
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
 }
 .form{
     flex-direction: column;
@@ -274,8 +305,19 @@ input[type=checkbox] {
     display: none;
 }
 #facility .service-panel{
-    width: 90%;
+    width: 100%;
 }
+#facility{
+    width:100%;
+
+}
+#facility .service-panel-side {
+    display: none;
+}
+.service-panel-side img{
+    display: none;
+}
+
 }
 
 
@@ -291,7 +333,7 @@ input[type=checkbox] {
     background-color: rgba(255, 255, 255, 0);
     min-height:100vh;
     height: auto;
-    padding-top: 120px;
+    padding-top: 80px;
     display: flex;
     justify-content: center;
 
@@ -335,7 +377,7 @@ input[type=checkbox] {
 .content-text p{
     font-size: 18px;
     font-weight: 300;
-    margin-top: 10px;
+    margin-top: 5px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 20px;
     color: #1c96ca;
@@ -350,8 +392,9 @@ input[type=checkbox] {
     background-color: rgba(255, 28, 28, 0);
     height:auto;
     min-height: 100vh;
-    align-items:flex-start;
+    align-items:center;
     justify-content: center;
+    
     padding-top: 80px;
 }
 .panel {
@@ -370,12 +413,12 @@ input[type=checkbox] {
     width: 320px;
     height: 480px;
     padding-top: 0px;
-    color:rgb(255, 139, 139);
+    color:rgb(255, 64, 64);
     display: flex;
     margin-top: 40px;
     border-radius: 20px;
     flex-direction: column;
-    background-color: #c9e9f7;
+    background-color: #ddf5ff;
     box-shadow: 12px 12px 2px 1px #dcdddda6;
 }
 .profile{
@@ -408,40 +451,71 @@ input[type=checkbox] {
     padding: 20px;
     font-size: 15px;
     height: auto;
-    color: #1c96ca;
+    color: #074c69;
 }
 #facility{
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 80%;
     height: auto;
     min-height: 100vh;
     padding-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
     padding-bottom: 80px;
 }
 .service-panel{
-    width: 80%;
+    width: 50%;
     height:auto;
     background-color: #1c96ca00;
-    padding-top: 40PX;
+    padding-top: 20PX;
     display:flex;
-    justify-content: center;
+    padding-left: 22px;
+    justify-content: left;
     flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: center;
     border-radius: 20px;
 }
-.service-block{
-    width: 220px;
-    margin:10px;
-    height: 220px;
+.service-panel-side{
+    width: 50%;
     display: flex;
+    padding-top: 20px;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: #1c96ca00;
+}
+.service-panel-side img{
+    border-radius: 20px; 
+    margin: 10px;
+    box-shadow: 8px 8px 2px 1px #dcdddda6;
+}
+.service-block{
+    width: 120px;
+    margin:10px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
     /* border-bottom-left-radius:0 ;
     border-top-left-radius: 0;
     border-bottom-right-radius: 0;
     border-top-right-radius: 0; */
-    border-radius:20px ;
+    border-radius:10px ;
+    align-items: center;
     justify-content: center;
     background-color: #c9e9f7;
     box-shadow: 8px 8px 2px 1px #dcdddda6;
+}
+.service-block img{
+    width: 80px;
+    height: 80px;
+}
+.service-block label{
+    font-size: 15px;
+    font-family:sans-serif;
+    color: rgb(255, 64, 64);
+
 }
 .card:hover{
     background-color: #6fd0fa;
@@ -468,7 +542,7 @@ input[type=checkbox] {
 #appointment{
 width: 100%;
 height: 100vh;
-z-index: 1;
+z-index: -1;
 display: flex;
 background-color: #72cbf100;
 justify-content:center;
@@ -538,4 +612,7 @@ align-items: center;
 }
 .form-box input[type=submit]:hover{
     background-color: rgb(252, 153, 153);
+}
+#appointment{
+    display: none;
 }

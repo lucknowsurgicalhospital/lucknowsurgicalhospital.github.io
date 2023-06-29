@@ -6,25 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" />
-    <title>Homepage</title>
+    <title>Homepage | Lucknow Surgical Hospital </title>
 </head>
 
 <script>
 function whatsapp(){
-    var name = document.getElementById("name").value;
-    var city = document.getElementById("city").value;
-    var email = document.getElementById("email").value;
-    var tel = document.getElementById("tel").value;
+var name = document.getElementById("name").value;
+var city = document.getElementById("city").value;
+var email = document.getElementById("email").value;
+var tel = document.getElementById("tel").value;
 
-    var url = "https://wa.me/918795041549?text="
-    +"*Name :* "+name+"%0a"
-    +"*City :* "+city+"%0a"
-    +"*Email :* "+email+"%0a"
-    +"*Tel :* "+tel;
 
-    window.open(url,'_blank').focus();
-    }
+var url = "https://wa.me/918795041549?text="
++"*Name :* "+name+"%0a"
++"*City :* "+city+"%0a"
++"*Email :* "+email+"%0a"
++"*Tel :* "+tel;
 
+window.open(url,'_blank').focus();
+}
+
+
+function bookAppointment(){
+    document.getElementById('appointment').style.display = "flex";
+}
 </script>
 
 <body>
@@ -38,10 +43,11 @@ function whatsapp(){
                 <label for="checkbox_toggle" class="humburger">&#9776;</label>
                 <div class="menu">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#facility">Facility</a></li>
                     <li><a href="#team">Our Team</a></li>
+                    <li><a href="#facility">Facility</a></li>
+                    
                     <li><a href="#">Contact Us</a></li>
-                    <li id="btnBook"><a href="#appointment">Book Appointment</a></li>
+                    <li id="btnBook"><a href="#appointment" onclick="bookAppointment();">Book Appointment</a></li>
                 </div>
             </div>
         </div>
@@ -50,7 +56,7 @@ function whatsapp(){
         <div id="home">
             <div class="content">
                 <div class="content-text">
-                    <h1>We take care of your Health..</h1>
+                    <h1>We Take Care of Your Health...</h1>
                     <p>✨ Your Wellness Journey Starts Here! ✨</p>
                     <p>Contact us today at 0522-2978518 to learn more or to schedule an appointment. Your well-being awaits!</p>
                     <div class="btnBook">
@@ -64,7 +70,6 @@ function whatsapp(){
         </div>
         <div id="team">
             <div class="panel">
-                
                 <div class="card">
                     <div class="profile">
                         <img src="res/profile1.png" alt="" srcset="">
@@ -93,7 +98,6 @@ function whatsapp(){
                     <div class="profile-desc">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. At tempore nostrum deserunt nesciunt quasi neque dignissimos eos illo blanditiis sapiente error officiis tempora vero debitis, omnis rerum, consequuntur, similique repellendus.
                     </div>
-                   
                 </div>
                 <div class="card">
                     <div class="profile">
@@ -108,22 +112,6 @@ function whatsapp(){
                     <div class="profile-desc">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. At tempore nostrum deserunt nesciunt quasi neque dignissimos eos illo blanditiis sapiente error officiis tempora vero debitis, omnis rerum, consequuntur, similique repellendus.
                     </div>
-                    
-                </div>
-                <div class="card">
-                    <div class="profile">
-                        <img src="res/profile1.png" alt="" srcset="">
-                    </div>
-                    <div class="profile-title">
-                       Dr. Richa Ojha
-                    </div>
-                    <div class="profile-tag">
-                        MBBS, MD (Obsteric & Gyanecology)
-                    </div>
-                    <div class="profile-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. At tempore nostrum deserunt nesciunt quasi neque dignissimos eos illo blanditiis sapiente error officiis tempora vero debitis, omnis rerum, consequuntur, similique repellendus.
-                    </div>
-                    
                 </div>
                 <div class="card">
                     <div class="profile">
@@ -138,93 +126,56 @@ function whatsapp(){
                     <div class="profile-desc">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. At tempore nostrum deserunt nesciunt quasi neque dignissimos eos illo blanditiis sapiente error officiis tempora vero debitis, omnis rerum, consequuntur, similique repellendus.
                     </div>
-                    
-                </div>
-                <div class="card">
-                    <div class="profile">
-                        <img src="res/profile1.png" alt="" srcset="">
-                    </div>
-                    <div class="profile-title">
-                       Dr. Surya Prakash Shukla
-                    </div>
-                    <div class="profile-tag">
-                        MBBS, DM (Anasthetist)
-                    </div>
-                    <div class="profile-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. At tempore nostrum deserunt nesciunt quasi neque dignissimos eos illo blanditiis sapiente error officiis tempora vero debitis, omnis rerum, consequuntur, similique repellendus.
-                    </div>
-                    
-                </div>
-                <div class="card">
-                    <div class="profile">
-                        <img src="res/profile1.png" alt="" srcset="">
-                    </div>
-                    <div class="profile-title">
-                       Dr. Rishi Bhargav
-                    </div>
-                    <div class="profile-tag">
-                        MBBS, MD(Anasthetist)
-                    </div>
-                    <div class="profile-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. At tempore nostrum deserunt nesciunt quasi neque dignissimos eos illo blanditiis sapiente error officiis tempora vero debitis, omnis rerum, consequuntur, similique repellendus.
-                    </div>
-                    
-                </div>
-                <div class="card">
-                    <div class="profile">
-                        <img src="res/profile1.png" alt="" srcset="">
-                    </div>
-                    <div class="profile-title">
-                       Dr. Anuj Kumar Tripathi
-                    </div>
-                    <div class="profile-tag">
-                        MBBS, MD(Anasthetist)
-                    </div>
-                    <div class="profile-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. At tempore nostrum deserunt nesciunt quasi neque dignissimos eos illo blanditiis sapiente error officiis tempora vero debitis, omnis rerum, consequuntur, similique repellendus.
-                    </div>
-                    
-                </div>
+                </div>             
+                
             </div>
         </div>
         <div id="facility">
+            <div class="service-panel-side">
+                <img src="res/profile3.jpg" alt="">
+            </div>
             <div class="service-panel">
                 <div class="service-block">
-                    <img src="res/media1.png" alt="">
+                    <img src="res/surgery.png" alt="">
+                    <label for="">Laproscopic</label>
                 </div>
                 <div class="service-block">
-                    <img src="res/media1.png" alt="">
+                    <img src="res/medicine.png" alt="">
+                    <label for="">Medicine</label>
                 </div>
                 <div class="service-block">
-                    <img src="res/media1.png" alt="">
+                    <img src="res/obs.png" alt="">
+                    <label for="">Obs & Gyne</label>
                 </div>
                 <div class="service-block">
-                    <img src="res/media1.png" alt="">
+                    <img src="res/ortho.png" alt="">
+                    <label for="">Orthopedics</label>
                 </div>
                 <div class="service-block">
-                    <img src="res/media1.png" alt="">
+                    <img src="res/urology.png" alt="">
+                    <label for="">Urology</label>
                 </div>
                 <div class="service-block">
-                    <img src="res/media1.png" alt="">
+                    <img src="res/pedia.png" alt="">
+                    <label for="">Pediatric</label>
                 </div>
                 <div class="service-block">
-                    <img src="res/media1.png" alt="">
+                    <img src="res/neuro.png" alt="">
+                    <label for="">Neurology</label>
                 </div>
                 <div class="service-block">
-                    <img src="res/media1.png" alt="">
+                    <img src="res/physio.png" alt="">
+                    <label for="">Physiotherapy</label>
                 </div>
                 <div class="service-block">
-                    <img src="res/media1.png" alt="">
+                    <img src="res/radio.png" alt="">
+                    <label for="">Radiology</label>
                 </div>
                 <div class="service-block">
-                    <img src="res/media1.png" alt="">
+                    <img src="res/ent.png" alt="">
+                    <label for="">ENT</label>
                 </div>
-                <div class="service-block">
-                    <img src="res/media1.png" alt="">
-                </div>
-                <div class="service-block">
-                    <img src="res/media1.png" alt="">
-                </div>
+                
             </div>
         </div>
         <div id="appointment">
@@ -245,7 +196,7 @@ function whatsapp(){
 
                 </div>
                 <div class="form-media">
-                    <img src="res/profile1.png" alt="">
+                    <img src="res/appointment.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -255,7 +206,7 @@ function whatsapp(){
     </footer>
     <div class="bottom-label">
         <div class="tel"><a href="tel://9555255348">Book Health Checkup</a></div>
-        <div class="book"> <a href="https://wa.me/918795041549/">Book Appointment</a></div>
+        <div class="book"> <a href="#">Book Appointment</a></div>
     </div>
 </body>
 
